@@ -1,0 +1,46 @@
+input[type='file'] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+input {
+    line-height: normal;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+input[type='file'] + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+    color: #f1e5e6;
+    background-color: #d3394c;
+}
+
+input[type='file']:focus + label,
+input[type='file'] + label:hover {
+    background-color: #722040;
+}
+
+input[type='file']:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+
+input[type='file'] + label * {
+    pointer-events: none;
+}
