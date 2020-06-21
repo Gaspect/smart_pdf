@@ -1,6 +1,6 @@
 # Smart Pdf
 
-Un API para el análisis de artículos y documentos científicos no estructurados en fromato pdf.
+Un API para el análisis de artículos y documentos científicos no estructurados en formato pdf.
 
 ## Requisitos
 
